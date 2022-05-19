@@ -1,0 +1,8 @@
+{
+    "baseUrl": "https://katanamrp.com/",
+    "defaultCommandTimeOut": 6000,
+    "pageLoadTimeOut": 6000,
+    "chromeWebSecurity": false,
+    "failOnStatusCode": false,
+    "projectId": "fsqzix"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "katana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "customerCreationTest": "cypress run -b chrome --headless --spec 'cypress/integration/RunnerClasses/CustomerCreationRunner.spec.js'",
+    "salesOrderTest": "cypress run -b chrome --headless --spec 'cypress/integration/RunnerClasses/SalesOrderRunner.spec.js'",
+    "customerCreationTest(dashboard)": "npx cypress run --record --key f55c84cf-d692-4626-8afb-80374ff56e75 --spec 'cypress/integration/RunnerClasses/CustomerCreationRunner.spec.js' "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.6.1"
+  }
+}
