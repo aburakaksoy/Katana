@@ -8,9 +8,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.4.2
-      - name: Cypress.io
+      - name: Customer Creation Test
         uses: cypress-io/github-action@v2.9.7
         with:
-          start: npm run start
-         
+          start: npm run customerCreationTest
+      - name: Sales Order Test
+        uses: cypress-io/github-action@v2.9.7
+        with:
+          start: npm run salesOrderTest   
+        
+    
 
