@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run customerCreationTest && salesOrderTest && customerCreationTestDashboard",
     "customerCreationTest": "cypress run -b chrome --headless --spec 'cypress/integration/RunnerClasses/CustomerCreationRunner.spec.js'",
     "salesOrderTest": "cypress run -b chrome --headless --spec 'cypress/integration/RunnerClasses/SalesOrderRunner.spec.js'",
     "customerCreationTestDashboard": "npx cypress run --record --key f55c84cf-d692-4626-8afb-80374ff56e75 --spec 'cypress/integration/RunnerClasses/CustomerCreationRunner.spec.js' "
