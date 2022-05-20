@@ -2,8 +2,7 @@
 
 import { BasePage } from "./BasePage";
 
-//sayfadaki webelementleri ilk kez tıkladığımda başka bir webelementine dönüştüğü için iki kere webelementi bulduk
-//hata this element is detacted from the DOM
+
 
 export class SalesOrderPage extends BasePage {
 
