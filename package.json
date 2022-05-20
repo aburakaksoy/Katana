@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run customerCreationTest && npm run salesOrderTest && npm run customerCreationTestDashboard",
     "customerCreationTest": "cypress run -b chrome --headless --spec 'cypress/integration/RunnerClasses/CustomerCreationRunner.spec.js'",
     "salesOrderTest": "cypress run -b chrome --headless --spec 'cypress/integration/RunnerClasses/SalesOrderRunner.spec.js'",
-    "customerCreationTest(dashboard)": "npx cypress run --record --key f55c84cf-d692-4626-8afb-80374ff56e75 --spec 'cypress/integration/RunnerClasses/CustomerCreationRunner.spec.js' "
+    "customerCreationTestDashboard": "npx cypress run --record --key f55c84cf-d692-4626-8afb-80374ff56e75 --spec 'cypress/integration/RunnerClasses/CustomerCreationRunner.spec.js' "
   },
   "author": "",
   "license": "ISC",

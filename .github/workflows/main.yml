@@ -1,0 +1,21 @@
+name: knt Test
+
+on: [push]
+
+jobs: 
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.2
+      - name: Customer Creation Test
+        uses: cypress-io/github-action@v2.9.7
+        with:
+          start: npm run customerCreationTest
+      - name: Sales Order Test
+        uses: cypress-io/github-action@v2.9.7
+        with:
+          start: npm run salesOrderTest   
+        
+    
+
