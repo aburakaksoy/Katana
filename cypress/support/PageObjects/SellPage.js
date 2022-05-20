@@ -8,7 +8,6 @@ export class SellPage extends BasePage {
     }
 
     findOrderWithOrderNumber(orderNumber) {
-        // cy.get(".Loader__content a").last().contains(orderNumber).should("be.visible");
         cy.get("body").find(".ag-body-viewport")  //.scrollTo("bottom");
         cy.contains(orderNumber).should("have.text", orderNumber);
     }
